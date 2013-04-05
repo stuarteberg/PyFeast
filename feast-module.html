@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>feast</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >PyFeast</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Module&nbsp;feast
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module feast</h1><p class="nomargin-top"><span class="codelink"><a href="feast-pysrc.html">source&nbsp;code</a></span></p>
+<pre class="literalblock">
+
+The FEAST module provides an interface between the C-library
+for feature selection to Python. 
+
+References: 
+1) G. Brown, A. Pocock, M.-J. Zhao, and M. Lujan, &quot;Conditional
+    likelihood maximization: A unifying framework for information
+    theoretic feature selection,&quot; Journal of Machine Learning 
+    Research, vol. 13, pp. 27-66, 2012.
+
+</pre>
+
+<hr />
+<div class="fields">      <p><strong>Version:</strong>
+        0.2.0
+      </p>
+      <p><strong>Author:</strong>
+        Calvin Morrison
+      </p>
+      <p><strong>Copyright:</strong>
+        Copyright 2013, EESI Laboratory
+      </p>
+      <p><strong>License:</strong>
+        GPL
+      </p>
+</div><!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Functions</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="feast-module.html#BetaGamma" class="summary-sig-name">BetaGamma</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">labels</span>,
+        <span class="summary-sig-arg">n_select</span>,
+        <span class="summary-sig-arg">beta</span>=<span class="summary-sig-default">1.0</span>,
+        <span class="summary-sig-arg">gamma</span>=<span class="summary-sig-default">1.0</span>)</span><br />
+      This algorithm implements conditional mutual information feature 
+      select, such that beta and gamma control the weight attached to the 
+      redundant mutual and conditional mutual information, respectively.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="feast-pysrc.html#BetaGamma">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="feast-module.html#CIFE" class="summary-sig-name">CIFE</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">labels</span>,
+        <span class="summary-sig-arg">n_select</span>)</span><br />
+      This function implements the Condred feature selection algorithm.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="feast-pysrc.html#CIFE">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="feast-module.html#CMIM" class="summary-sig-name">CMIM</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">labels</span>,
+        <span class="summary-sig-arg">n_select</span>)</span><br />
+      This function implements the conditional mutual information 
+      maximization feature selection algorithm.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="feast-pysrc.html#CMIM">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="feast-module.html#CondMI" class="summary-sig-name">CondMI</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">labels</span>,
+        <span class="summary-sig-arg">n_select</span>)</span><br />
+      This function implements the conditional mutual information 
+      maximization feature selection algorithm.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="feast-pysrc.html#CondMI">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="feast-module.html#Condred" class="summary-sig-name">Condred</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">labels</span>,
+        <span class="summary-sig-arg">n_select</span>)</span><br />
+      This function implements the Condred feature selection algorithm.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="feast-pysrc.html#Condred">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="feast-module.html#DISR" class="summary-sig-name">DISR</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">labels</span>,
+        <span class="summary-sig-arg">n_select</span>)</span><br />
+      This function implements the double input symmetrical relevance 
+      feature selection algorithm.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="feast-pysrc.html#DISR">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="feast-module.html#ICAP" class="summary-sig-name">ICAP</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">labels</span>,
+        <span class="summary-sig-arg">n_select</span>)</span><br />
+      This function implements the interaction capping feature selection 
+      algorithm.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="feast-pysrc.html#ICAP">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="feast-module.html#JMI" class="summary-sig-name">JMI</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">labels</span>,
+        <span class="summary-sig-arg">n_select</span>)</span><br />
+      This function implements the joint mutual information feature 
+      selection algorithm.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="feast-pysrc.html#JMI">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="feast-module.html#MIFS" class="summary-sig-name">MIFS</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">labels</span>,
+        <span class="summary-sig-arg">n_select</span>)</span><br />
+      This function implements the MIFS algorithm.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="feast-pysrc.html#MIFS">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="feast-module.html#MIM" class="summary-sig-name">MIM</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">labels</span>,
+        <span class="summary-sig-arg">n_select</span>)</span><br />
+      This function implements the MIM algorithm.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="feast-pysrc.html#MIM">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">list</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="feast-module.html#mRMR" class="summary-sig-name">mRMR</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">labels</span>,
+        <span class="summary-sig-arg">n_select</span>)</span><br />
+      This funciton implements the max-relevance min-redundancy feature 
+      selection algorithm.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="feast-pysrc.html#mRMR">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">tuple</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="feast-module.html#check_data" class="summary-sig-name">check_data</a>(<span class="summary-sig-arg">data</span>,
+        <span class="summary-sig-arg">labels</span>)</span><br />
+      Check dimensions of the data and the labels.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="feast-pysrc.html#check_data">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Variables</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__credits__"></a><span class="summary-name">__credits__</span> = <code title="['Calvin Morrison', 'Gregory Ditzler']"><code class="variable-group">[</code><code class="variable-quote">'</code><code class="variable-string">Calvin Morrison</code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">Gregory Ditzler</code><code class="variable-quote">'</code><code class="variable-group">]</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__maintainer__"></a><span class="summary-name">__maintainer__</span> = <code title="'Calvin Morrison'"><code class="variable-quote">'</code><code class="variable-string">Calvin Morrison</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__email__"></a><span class="summary-name">__email__</span> = <code title="'mutantturkey@gmail.com'"><code class="variable-quote">'</code><code class="variable-string">mutantturkey@gmail.com</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__status__"></a><span class="summary-name">__status__</span> = <code title="'Release'"><code class="variable-quote">'</code><code class="variable-string">Release</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="feast-module.html#libFSToolbox" class="summary-name">libFSToolbox</a> = <code title="&lt;CDLL 'libFSToolbox.so', handle 2be1240 at 2b4bc10&gt;">&lt;CDLL 'libFSToolbox.so', handle 2be1240 at 2b4b<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="None">None</code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Function Details</span></td>
+</tr>
+</table>
+<a name="BetaGamma"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">BetaGamma</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">labels</span>,
+        <span class="sig-arg">n_select</span>,
+        <span class="sig-arg">beta</span>=<span class="sig-default">1.0</span>,
+        <span class="sig-arg">gamma</span>=<span class="sig-default">1.0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="feast-pysrc.html#BetaGamma">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This algorithm implements conditional mutual information feature 
+  select, such that beta and gamma control the weight attached to the 
+  redundant mutual and conditional mutual information, respectively.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>data</code></strong> (ndarray) - data in a Numpy array such that len(data) = n_observations, and 
+          len(data.transpose()) = n_features (REQUIRED)</li>
+        <li><strong class="pname"><code>labels</code></strong> (ndarray) - labels represented in a numpy list with n_observations as the 
+          number of elements. That is len(labels) = len(data) = 
+          n_observations. (REQUIRED)</li>
+        <li><strong class="pname"><code>n_select</code></strong> (integer) - number of features to select. (REQUIRED)</li>
+        <li><strong class="pname"><code>beta</code></strong> (float between 0 and 1.0) - penalty attacted to I(X_j;X_k)</li>
+        <li><strong class="pname"><code>gamma</code></strong> (float between 0 and 1.0) - positive weight attached to the conditional redundancy term 
+          I(X_k;X_j|Y)</li>
+    </ul></dd>
+    <dt>Returns: list</dt>
+        <dd>features in the order they were selected.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="CIFE"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">CIFE</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">labels</span>,
+        <span class="sig-arg">n_select</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="feast-pysrc.html#CIFE">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This function implements the Condred feature selection algorithm. beta
+  = 1; gamma = 1;</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>data</code></strong> (ndarray) - A Numpy array such that len(data) = n_observations, and 
+          len(data.transpose()) = n_features</li>
+        <li><strong class="pname"><code>labels</code></strong> (ndarray) - labels represented in a numpy list with n_observations as the 
+          number of elements. That is len(labels) = len(data) = 
+          n_observations.</li>
+        <li><strong class="pname"><code>n_select</code></strong> (integer) - number of features to select.</li>
+    </ul></dd>
+    <dt>Returns: list</dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="CMIM"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">CMIM</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">labels</span>,
+        <span class="sig-arg">n_select</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="feast-pysrc.html#CMIM">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This function implements the conditional mutual information 
+  maximization feature selection algorithm. Note that this implementation 
+  does not allow for the weighting of the redundancy terms that BetaGamma 
+  will allow you to do.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>data</code></strong> (ndarray) - A Numpy array such that len(data) = n_observations, and 
+          len(data.transpose()) = n_features</li>
+        <li><strong class="pname"><code>labels</code></strong> (ndarray) - labels represented in a numpy array with n_observations as the 
+          number of elements. That is len(labels) = len(data) = 
+          n_observations.</li>
+        <li><strong class="pname"><code>n_select</code></strong> (integer) - number of features to select.</li>
+    </ul></dd>
+    <dt>Returns: list</dt>
+        <dd>features in the order that they were selected.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="CondMI"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">CondMI</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">labels</span>,
+        <span class="sig-arg">n_select</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="feast-pysrc.html#CondMI">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This function implements the conditional mutual information 
+  maximization feature selection algorithm.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>data</code></strong> (ndarray) - data in a Numpy array such that len(data) = n_observations, and 
+          len(data.transpose()) = n_features</li>
+        <li><strong class="pname"><code>labels</code></strong> (ndarray) - represented in a numpy list with n_observations as the number of 
+          elements. That is len(labels) = len(data) = n_observations.</li>
+        <li><strong class="pname"><code>n_select</code></strong> (integer) - number of features to select.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>features in the order they were selected. @rtype list</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="Condred"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">Condred</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">labels</span>,
+        <span class="sig-arg">n_select</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="feast-pysrc.html#Condred">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This function implements the Condred feature selection algorithm. beta
+  = 0; gamma = 1;</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>data</code></strong> (ndarray) - data in a Numpy array such that len(data) = n_observations, and 
+          len(data.transpose()) = n_features</li>
+        <li><strong class="pname"><code>labels</code></strong> (ndarray) - labels represented in a numpy list with n_observations as the 
+          number of elements. That is len(labels) = len(data) = 
+          n_observations.</li>
+        <li><strong class="pname"><code>n_select</code></strong> (integer) - number of features to select.</li>
+    </ul></dd>
+    <dt>Returns: list</dt>
+        <dd>the features in the order they were selected.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="DISR"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">DISR</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">labels</span>,
+        <span class="sig-arg">n_select</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="feast-pysrc.html#DISR">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This function implements the double input symmetrical relevance 
+  feature selection algorithm.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>data</code></strong> (ndarray) - data in a Numpy array such that len(data) = n_observations, and 
+          len(data.transpose()) = n_features</li>
+        <li><strong class="pname"><code>labels</code></strong> (ndarray) - labels represented in a numpy list with n_observations as the 
+          number of elements. That is len(labels) = len(data) = 
+          n_observations.</li>
+        <li><strong class="pname"><code>n_select</code></strong> (integer) - number of features to select. (REQUIRED)</li>
+    </ul></dd>
+    <dt>Returns: list</dt>
+        <dd>the features in the order they were selected.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="ICAP"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">ICAP</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">labels</span>,
+        <span class="sig-arg">n_select</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="feast-pysrc.html#ICAP">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This function implements the interaction capping feature selection 
+  algorithm.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>data</code></strong> (ndarray) - data in a Numpy array such that len(data) = n_observations, and 
+          len(data.transpose()) = n_features</li>
+        <li><strong class="pname"><code>labels</code></strong> (ndarray) - labels represented in a numpy list with n_observations as the 
+          number of elements. That is len(labels) = len(data) = 
+          n_observations.</li>
+        <li><strong class="pname"><code>n_select</code></strong> (integer) - number of features to select. (REQUIRED)</li>
+    </ul></dd>
+    <dt>Returns: list</dt>
+        <dd>the features in the order they were selected.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="JMI"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">JMI</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">labels</span>,
+        <span class="sig-arg">n_select</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="feast-pysrc.html#JMI">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This function implements the joint mutual information feature 
+  selection algorithm.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>data</code></strong> (ndarray) - data in a Numpy array such that len(data) = n_observations, and 
+          len(data.transpose()) = n_features</li>
+        <li><strong class="pname"><code>labels</code></strong> (ndarray) - labels represented in a numpy list with n_observations as the 
+          number of elements. That is len(labels) = len(data) = 
+          n_observations.</li>
+        <li><strong class="pname"><code>n_select</code></strong> (integer) - number of features to select. (REQUIRED)</li>
+    </ul></dd>
+    <dt>Returns: list</dt>
+        <dd>the features in the order they were selected.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="MIFS"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">MIFS</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">labels</span>,
+        <span class="sig-arg">n_select</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="feast-pysrc.html#MIFS">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This function implements the MIFS algorithm. beta = 1; gamma = 0;</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>data</code></strong> (ndarray) - data in a Numpy array such that len(data) = n_observations, and 
+          len(data.transpose()) = n_features</li>
+        <li><strong class="pname"><code>labels</code></strong> (ndarray) - labels represented in a numpy list with n_observations as the 
+          number of elements. That is len(labels) = len(data) = 
+          n_observations.</li>
+        <li><strong class="pname"><code>n_select</code></strong> (integer) - number of features to select. (REQUIRED)</li>
+    </ul></dd>
+    <dt>Returns: list</dt>
+        <dd>the features in the order they were selected.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="MIM"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">MIM</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">labels</span>,
+        <span class="sig-arg">n_select</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="feast-pysrc.html#MIM">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This function implements the MIM algorithm. beta = 0; gamma = 0;</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>data</code></strong> (ndarray) - data in a Numpy array such that len(data) = n_observations, and 
+          len(data.transpose()) = n_features</li>
+        <li><strong class="pname"><code>labels</code></strong> (ndarray) - labels represented in a numpy list with n_observations as the 
+          number of elements. That is len(labels) = len(data) = 
+          n_observations.</li>
+        <li><strong class="pname"><code>n_select</code></strong> (integer) - number of features to select. (REQUIRED)</li>
+    </ul></dd>
+    <dt>Returns: list</dt>
+        <dd>the features in the order they were selected.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="mRMR"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">mRMR</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">labels</span>,
+        <span class="sig-arg">n_select</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="feast-pysrc.html#mRMR">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This funciton implements the max-relevance min-redundancy feature 
+  selection algorithm.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>data</code></strong> (ndarray) - data in a Numpy array such that len(data) = n_observations, and 
+          len(data.transpose()) = n_features</li>
+        <li><strong class="pname"><code>labels</code></strong> (ndarray) - labels represented in a numpy list with n_observations as the 
+          number of elements. That is len(labels) = len(data) = 
+          n_observations.</li>
+        <li><strong class="pname"><code>n_select</code></strong> (integer) - number of features to select. (REQUIRED)</li>
+    </ul></dd>
+    <dt>Returns: list</dt>
+        <dd>the features in the order they were selected.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="check_data"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">check_data</span>(<span class="sig-arg">data</span>,
+        <span class="sig-arg">labels</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="feast-pysrc.html#check_data">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Check dimensions of the data and the labels.  Raise and exception if 
+  there is a problem.</p>
+  <p>Data and Labels are automatically cast as doubles before calling the 
+  feature selection functions</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>data</code></strong> - the data</li>
+        <li><strong class="pname"><code>labels</code></strong> - the labels</li>
+    </ul></dd>
+    <dt>Returns: tuple</dt>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== VARIABLES DETAILS ==================== -->
+<a name="section-VariablesDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Variables Details</span></td>
+</tr>
+</table>
+<a name="libFSToolbox"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">libFSToolbox</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+&lt;CDLL 'libFSToolbox.so', handle 2be1240 at 2b4bc10&gt;
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >PyFeast</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri Apr  5 13:44:32 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
