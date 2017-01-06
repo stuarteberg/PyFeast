@@ -1,4 +1,5 @@
 #!/usr/bin/env python 
+from __future__ import print_function
 from feast import *
 import numpy as np
 import csv
@@ -68,93 +69,93 @@ n_select = 15												# how many features to select
 method = 'MIM'											# feature selection algorithm
 
 
-print '---> Information'
-print '     :n_observations - ' + str(n_observations)
-print '     :n_features     - ' + str(n_features)
-print '     :n_select       - ' + str(n_select)
-print '     :algorithm      - ' + str(method)
-print ' '
-print '---> Running unit tests on FEAST 4 Python... '
+print('---> Information')
+print('     :n_observations - ' + str(n_observations))
+print('     :n_features     - ' + str(n_features))
+print('     :n_select       - ' + str(n_select))
+print('     :algorithm      - ' + str(method))
+print(' ')
+print('---> Running unit tests on FEAST 4 Python... ')
 
 
 #################################################################
 #################################################################
-print '       Running BetaGamma... '
+print('       Running BetaGamma... ')
 sf = BetaGamma(data, labels, n_select, beta=0.5, gamma=0.5)
 if check_result(sf, n_relevant) == True:
-	print '          BetaGamma passed!'
+	print('          BetaGamma passed!')
 else:
-	print '          BetaGamma failed!'
+	print('          BetaGamma failed!')
 
 #################################################################
 #################################################################
-print '       Running CMIM... '
+print('       Running CMIM... ')
 sf = CMIM(data, labels, n_select)
 if check_result(sf, n_relevant) == True:
-	print '          CMIM passed!'
+	print('          CMIM passed!')
 else:
-	print '          CMIM failed!'
+	print('          CMIM failed!')
 
 
 #################################################################
 #################################################################
-print '       Running CondMI... '
+print('       Running CondMI... ')
 sf = CondMI(data, labels, n_select)
 if check_result(sf, n_relevant) == True:
-	print '          CondMI passed!'
+	print('          CondMI passed!')
 else:
-	print '          CondMI failed!'
+	print('          CondMI failed!')
 
 
 #################################################################
 #################################################################
-print '       Running DISR... '
+print('       Running DISR... ')
 sf = DISR(data, labels, n_select)
 if check_result(sf, n_relevant) == True:
-	print '          DISR passed!'
+	print('          DISR passed!')
 else:
-	print '          DISR failed!'
+	print('          DISR failed!')
 
 
 #################################################################
 #################################################################
-print '       Running ICAP... '
+print('       Running ICAP... ')
 sf = ICAP(data, labels, n_select)
 if check_result(sf, n_relevant) == True:
-	print '          ICAP passed!'
+	print('          ICAP passed!')
 else:
-	print '          ICAP failed!'
+	print('          ICAP failed!')
 
 
 #################################################################
 #################################################################
-print '       Running JMI... '
+print('       Running JMI... ')
 sf = JMI(data, labels, n_select)
 if check_result(sf, n_relevant) == True:
-	print '          JMI passed!'
+	print('          JMI passed!')
 else:
-	print '          JMI failed!'
+	print('          JMI failed!')
 
 
 #################################################################
 #################################################################
-print '       Running mRMR... '
+print('       Running mRMR... ')
 sf = mRMR(data, labels, n_select)
 if check_result(sf, n_relevant) == True:
-	print '          mRMR passed!'
+	print('          mRMR passed!')
 else:
-	print '          mRMR failed!'
+	print('          mRMR failed!')
 
 #################################################################
 #################################################################
-print '       Running MIM...'
+print('       Running MIM...')
 sf = MIM(data, labels, n_select)
 if check_result(sf, n_relevant) == True:
-	print '          MIM passed!'
+	print('          MIM passed!')
 else:
-	print '          MIM failed!'
+	print('          MIM failed!')
 
-print '---> Done unit tests!'
+print('---> Done unit tests!')
 
 
 
